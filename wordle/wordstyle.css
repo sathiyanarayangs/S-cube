@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    width: 100%;
+    background-color: black;
+    height: 100vh;
+    font-size: 14px;
+    /* no need scroll bar */
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    width: 100%;
+    padding: 1em;
+}
+
+.header h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.words{
+    width: 100%;
+    flex-grow: 1;
+
+}
+.words-container{
+    width: 100%;
+    display: flex;
+    /* one on top of each other */
+    flex-direction: column;
+    align-items: center;
+}
+
+.word-row{
+    display: flex;
+    flex-direction: row; 
+
+}
+
+.word{
+border: 1px solid #353535;
+width: 5em;
+height: 5em;
+
+margin-right: 0.4em;
+margin-bottom: 0.4em;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+/* spacing between each word box */
+
+}
+button:hover{
+    background-image: linear-gradient(to right, #00ffbf,#00ffff);
+}
+
+.keyboard{
+    width: 100%;
+    padding-bottom: 1em;
+    /* flex-grow:1 for words container pushed keyboard to bottom
+    so to look neat we gave bottom padding */
+}
+
+.keyboard-container{
+    width: 100%;
+    display: flex;
+    /* one on top of each other */
+    flex-direction: column;
+    align-items: center;
+}
+
+.keyboard button{
+    background-color: black;
+    color: white;
+    outline: none;
+    border: 1px solid #353535;
+    padding: 1em;
+    cursor: pointer;
+    margin-bottom: 0.4em;
+    border-radius: 4px;
+}
+
+.word-green{
+background-color: #52BE80 !important;
+color: white !important;
+}
+
+.word-yellow{
+    background-color: #f8c471 !important;
+    color: white !important;
+}
+
+.word-grey{
+    background-color: #839192 !important;
+    color: white !important;
+}
