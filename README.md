@@ -1,2 +1,2 @@
 # S-cube
-Free Gaming Site
+Free Gaming Site🎮
